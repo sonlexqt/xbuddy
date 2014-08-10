@@ -1,0 +1,1 @@
+Utilites = new Meteor.Collection('utilites');

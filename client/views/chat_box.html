@@ -1,0 +1,35 @@
+<template name="chat_box">
+    <div class="page-header">
+        <h1>{{roomTitle}}
+            <small>Enjoy chatty time with your friends !</small>
+        </h1>
+    </div>
+    <div class="col-lg-12">
+        <div class="form-control col-lg-12 chatBox">
+            <ul>
+                {{#each messages}}
+                <li class="msgLine">
+                    <strong style="color: {{userTextColor}}">
+                        {{userEmail}}
+                    </strong>
+                    {{userMsg}}
+                    <span>
+                        {{createdAt}}
+                    </span>
+                </li>
+                {{/each}}
+                {{#each typingUsers}}
+                    <i>{{this}} is typing...</i>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-lg-12 input-group">
+            <input type="text" class="form-control inputMsg"
+                   placeholder="type something here ...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary sendMsg"
+                                type="button">Send</button>
+                    </span>
+        </div>
+    </div>
+</template>

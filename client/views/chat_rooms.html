@@ -1,0 +1,198 @@
+<template name="chat_rooms">
+    <div class="page-header">
+        <h1>CHAT ROOMS
+            <small>Display all the rooms that available</small>
+        </h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
+
+                <button class="btn btn-success btn-block" data-toggle="modal" data-target="#addNewRoomModal">
+                    <span class="fa fa-plus-circle"></span> Add New Room
+                </button>
+                <br/>
+                <ul class="room-list">
+                    <!--<li>-->
+                        <!--<time datetime="2014-07-20">-->
+                            <!--<span class="day">4</span>-->
+                            <!--<span class="month">Jul</span>-->
+                            <!--<span class="year">2014</span>-->
+                            <!--<span class="time">ALL DAY</span>-->
+                        <!--</time>-->
+                        <!--<img alt="Independence Day" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg" />-->
+                        <!--<div class="info">-->
+                            <!--<h2 class="title">Independence Day</h2>-->
+                            <!--<p class="desc">United States Holiday</p>-->
+                        <!--</div>-->
+                        <!--<div class="social">-->
+                            <!--<ul>-->
+                                <!--<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>-->
+                                <!--<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>-->
+                                <!--<li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</li>-->
+
+                    <!--<li>-->
+                        <!--<time datetime="2014-07-20 0000">-->
+                            <!--<span class="day">8</span>-->
+                            <!--<span class="month">Jul</span>-->
+                            <!--<span class="year">2014</span>-->
+                            <!--<span class="time">12:00 AM</span>-->
+                        <!--</time>-->
+                        <!--<div class="info">-->
+                            <!--<h2 class="title">One Piece Unlimited World Red</h2>-->
+                            <!--<p class="desc">PS Vita</p>-->
+                            <!--<ul>-->
+                                <!--<li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span> Website</a></li>-->
+                                <!--<li style="width:50%;"><span class="fa fa-money"></span> $39.99</li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                        <!--<div class="social">-->
+                            <!--<ul>-->
+                                <!--<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>-->
+                                <!--<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>-->
+                                <!--<li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</li>-->
+
+                    <!--<li>-->
+                        <!--<time datetime="2014-07-20 2000">-->
+                            <!--<span class="day">20</span>-->
+                            <!--<span class="month">Jan</span>-->
+                            <!--<span class="year">2014</span>-->
+                            <!--<span class="time">8:00 PM</span>-->
+                        <!--</time>-->
+                        <!--<img alt="My 24th Birthday!" src="https://farm5.staticflickr.com/4150/5045502202_1d867c8a41_q.jpg" />-->
+                        <!--<div class="info">-->
+                            <!--<h2 class="title">Mouse0270's 24th Birthday!</h2>-->
+                            <!--<p class="desc">Bar Hopping in Erie, Pa.</p>-->
+                            <!--<ul>-->
+                                <!--<li style="width:33%;">1 <span class="glyphicon glyphicon-ok"></span></li>-->
+                                <!--<li style="width:34%;">3 <span class="fa fa-question"></span></li>-->
+                                <!--<li style="width:33%;">103 <span class="fa fa-envelope"></span></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                        <!--<div class="social">-->
+                            <!--<ul>-->
+                                <!--<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>-->
+                                <!--<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>-->
+                                <!--<li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</li>-->
+
+                    <!--<li>-->
+                        <!--<time datetime="2014-07-31 1600">-->
+                            <!--<span class="day">31</span>-->
+                            <!--<span class="month">Jan</span>-->
+                            <!--<span class="year">2014</span>-->
+                            <!--<span class="time">4:00 PM</span>-->
+                        <!--</time>-->
+                        <!--<img alt="Disney Junior Live On Tour!" src="http://media.ticketmaster.com/tm/en-us/dbimages/142513a.jpg" />-->
+                        <!--<div class="info">-->
+                            <!--<h2 class="title">Disney Junior Live On Tour!</h2>-->
+                            <!--<p class="desc"> Pirate and Princess Adventure</p>-->
+                            <!--<ul>-->
+                                <!--<li style="width:33%;">$49.99 <span class="fa fa-male"></span></li>-->
+                                <!--<li style="width:34%;">$29.99 <span class="fa fa-child"></span></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                        <!--<div class="social">-->
+                            <!--<ul>-->
+                                <!--<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>-->
+                                <!--<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>-->
+                                <!--<li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</li>-->
+
+                    <!-- TEST NEW ROOM-->
+                    {{#each chat_room}}
+                    <li>
+                        <time>
+                            <span class="day">{{createdAt_day}}</span>
+                            <span class="month">{{createdAt_month}}</span>
+                            <span class="year">{{createdAt_year}}</span>
+                        </time>
+                        <img src="{{imgLink}}">
+                        <div class="info">
+                            <h2 class="title">
+                                <a href="{{pathFor 'chat_box'}}">
+                                    {{title}}
+                                </a>
+                            </h2>
+                            <p class="desc">{{description}}</p>
+                            <ul class="fa-icon-area">
+                                <li style="width:33%;">{{numberOfParticipants}} <span class="fa fa-male"></span></li>
+                            </ul>
+                        </div>
+                        <div class="social">
+                            <ul>
+                                <li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
+                                <li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
+                                <li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for creating new rooms -->
+    <div class="modal fade" id="addNewRoomModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Create a new room</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="inputTitle"
+                                       class="col-lg-3 control-label">Title
+                                    </label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" id="inputTitle" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputDescription" class="col-lg-3 control-label">
+                                    Description
+                                </label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" id="inputDescription" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputImgLink"
+                                       class="col-lg-3 control-label">
+                                    Image Link
+                                </label>
+                                <div class="col-lg-9">
+                                    <input class="form-control"
+                                           id="inputImgLink" type="text">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button"
+                            class="btn btn-primary btnCreateRoom" data-dismiss="modal">
+                        Create
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Back to Top button -->
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+</template>

@@ -1,0 +1,519 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+/* styles for "user_profile" template */
+body {
+  font-family: 'Lato', 'sans-serif';
+  background: #505060;
+  padding: 20px;
+}
+
+#hue-demo{
+  width: 43%;
+}
+.user_profile_editable{
+  border-bottom: none;
+  font-weight: normal;
+  margin-right: 4px;
+}
+
+.user_profile_editable_tags{
+  border-bottom: none;
+  margin-right: 2px;
+}
+
+.profile {
+  min-height: 355px;
+  display: inline-block;
+}
+
+figcaption.ratings {
+  margin-top: 20px;
+}
+
+figcaption.ratings a {
+  color: #f1c40f;
+  font-size: 11px;
+}
+
+figcaption.ratings a:hover {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+.divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.emphasis {
+  border-top: 4px solid transparent;
+}
+
+.emphasis:hover {
+  border-top: 4px solid #1abc9c;
+}
+
+.emphasis h2 {
+  margin-bottom: 0;
+}
+
+span.tags {
+  background: #1abc9c;
+  border-radius: 2px;
+  color: #f5f5f5;
+  font-weight: bold;
+  padding: 2px 4px;
+}
+
+.dropdown-menu {
+  background-color: #34495e;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  width: 250px;
+  margin-left: -125px;
+  left: 50%;
+}
+
+.dropdown-menu .divider {
+  background: none;
+}
+
+.dropdown-menu > li > a {
+  color: #f5f5f5;
+}
+
+.dropup .dropdown-menu {
+  margin-bottom: 10px;
+}
+
+.dropup .dropdown-menu:before {
+  content: "";
+  border-top: 10px solid #34495e;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -10px;
+  z-index: 10;
+}
+
+/* styles for "chat_rooms" template */
+
+.back-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display:none;
+}
+
+.room-list {
+  list-style: none;
+  font-family: 'Lato', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.room-list > li {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px rgb(51, 51, 51);
+  box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
+  padding: 0px;
+  margin: 0px 0px 20px;
+}
+
+.room-list > li > time {
+  display: inline-block;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(197, 44, 102);
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.room-list > li:nth-child(even) > time {
+  background-color: rgb(165, 82, 167);
+}
+
+.room-list > li > time > span {
+  display: none;
+}
+
+.room-list > li > time > .day {
+  display: block;
+  font-size: 56pt;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.room-list > li time > .month {
+  display: block;
+  font-size: 24pt;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.room-list > li > img {
+  width: 100%;
+}
+
+.room-list > li > .info {
+  padding-top: 5px;
+  text-align: center;
+}
+
+.room-list > li > .info > .title {
+  font-size: 17pt;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.room-list > li > .info > .desc {
+  font-size: 13pt;
+  font-weight: 300;
+  margin: 0px;
+}
+
+.room-list > li > .info > ul,
+.room-list > li > .social > ul {
+  display: table;
+  list-style: none;
+  margin: 10px 0px 0px;
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.room-list > li > .social > ul {
+  margin: 0px;
+}
+
+.room-list > li > .info > ul > li,
+.room-list > li > .social > ul > li {
+  display: table-cell;
+  cursor: pointer;
+  color: rgb(30, 30, 30);
+  font-size: 11pt;
+  font-weight: 300;
+  padding: 3px 0px;
+}
+
+.room-list > li > .info > ul > li > a {
+  display: block;
+  width: 100%;
+  color: rgb(30, 30, 30);
+  text-decoration: none;
+}
+
+.room-list > li > .social > ul > li {
+  padding: 0px;
+}
+
+.room-list > li > .social > ul > li > a {
+  padding: 3px 0px;
+}
+
+.room-list > li > .info > ul > li:hover,
+.room-list > li > .social > ul > li:hover {
+  color: rgb(30, 30, 30);
+  background-color: rgb(200, 200, 200);
+}
+
+.facebook a,
+.twitter a,
+.google-plus a {
+  display: block;
+  width: 100%;
+  color: rgb(75, 110, 168) !important;
+}
+
+.twitter a {
+  color: rgb(79, 213, 248) !important;
+}
+
+.google-plus a {
+  color: rgb(221, 75, 57) !important;
+}
+
+.facebook:hover a {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(75, 110, 168) !important;
+}
+
+.twitter:hover a {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(79, 213, 248) !important;
+}
+
+.google-plus:hover a {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(221, 75, 57) !important;
+}
+
+.btn-option {
+  width: 80%;
+}
+
+.media {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.media a {
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #FFF;
+  display: inline-block;
+  height: 45px;
+  -webkit-transition: all .3s ease-in 0;
+  -moz-transition: all .3s ease-in 0;
+  transition: all .3s ease-in 0;
+  vertical-align: middle;
+  width: 45px;
+  text-align: center;
+  opacity: 0.7;
+  margin: .5em .7em 0 0;
+}
+
+/*a{color:#FFF;text-decoration:none;}*/
+
+.media i {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.icon-1x {
+  font-size: 1.7em;
+}
+
+.media a.ml:hover {
+  background-color: #FD6E6E;
+  border: 1px solid #FD6E6E;
+}
+
+.media a.tw:hover {
+  background-color: #32CDFB;
+  border: 1px solid #32CDFB;
+}
+
+.media a.db:hover {
+  background-color: #D45C8C;
+  border: 1px solid #D45C8C;
+}
+
+.media a.fb:hover {
+  background-color: #5171B9;
+  border: 1px solid #5171B9;
+}
+
+.media a.gp:hover {
+  background-color: #dd4b39;
+  border: 1px solid #dd4b39;
+}
+
+.media a.li:hover {
+  background-color: #0e76a8;
+  border: 1px solid #0e76a8;
+}
+
+.media a.pi:hover {
+  background-color: #c8232c;
+  border: 1px solid #c8232c;
+}
+
+.media a.sk:hover {
+  background-color: #00aff0;
+  border: 1px solid #00aff0;
+}
+
+/* carousel */
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px 0px 0px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control {
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+
+/* Previous button  */
+#quote-carousel .carousel-control.left {
+  left: -12px;
+}
+
+/* Next button  */
+#quote-carousel .carousel-control.right {
+  right: -12px !important;
+}
+
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li {
+  background: #c0c0c0;
+}
+
+#quote-carousel .carousel-indicators .active {
+  background: #333333;
+}
+
+#quote-carousel img {
+  width: 250px;
+  height: 100px
+}
+
+/* End carousel */
+
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+
+.item blockquote img {
+  margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+  content: "\f10d";
+  font-family: 'Fontawesome';
+  float: left;
+  margin-right: 10px;
+}
+
+.carousel-content {
+  color: #fff;
+}
+
+/* styles for "404" template */
+.error-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.error-actions {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.error-actions .btn {
+  margin-right: 10px;
+}
+
+.error-content {
+  color: #fff;
+}
+
+.page-header > h1 {
+  color: #fff;
+}
+
+.room-list > li {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding: 0px;
+}
+
+.room-list > li > time,
+.room-list > li > img {
+  display: inline-block;
+}
+
+.room-list > li > time,
+.room-list > li > img {
+  width: 120px;
+  float: left;
+}
+
+.room-list > li > .info {
+  background-color: rgb(245, 245, 245);
+  overflow: hidden;
+}
+
+.room-list > li > time,
+.room-list > li > img {
+  width: 120px;
+  height: 120px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.room-list > li > .info {
+  position: relative;
+  height: 120px;
+  text-align: left;
+  padding-right: 40px;
+}
+
+.room-list > li > .info > .title,
+.room-list > li > .info > .desc {
+  padding: 0px 10px;
+}
+
+.room-list > li > .info > ul {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.room-list > li > .social {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  width: 40px;
+}
+
+.room-list > li > .social > ul {
+  border-left: 1px solid rgb(230, 230, 230);
+}
+
+.room-list > li > .social > ul > li {
+  display: block;
+  padding: 0px;
+}
+
+.room-list > li > .social > ul > li > a {
+  display: block;
+  width: 40px;
+  padding: 10px 0px 9px;
+}
+
+#quote-carousel {
+  margin-bottom: 0;
+  padding: 0 40px 30px 40px;
+  margin-top: 30px;
+}
+
+/* styles for "chat_box" template */
+.input-group {
+  padding: 5px;
+}
+
+.chatBox {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.msgLine > span {
+  float: right;
+  color: #C1C1C1;
+}
+
+ul {
+  list-style-type: none;
+}
+
