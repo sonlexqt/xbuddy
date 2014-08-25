@@ -4,7 +4,8 @@
     "basePackages": {
       "iron-router": {},
       "bootstrap-3": {},
-      "accounts-ui-bootstrap-3": {}
+      "accounts-ui-bootstrap-3": {},
+      "streams": {}
     },
     "packages": {
       "iron-router": {
@@ -19,8 +20,13 @@
       },
       "accounts-ui-bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
-        "tag": "v0.3.3",
-        "commit": "2e50b605d8d5ed68e48c4529a65f13552d8af3f9"
+        "tag": "v0.3.4",
+        "commit": "9f006ee48d869877d90d54ac75b54550a587df8f"
+      },
+      "streams": {
+        "git": "https://github.com/arunoda/meteor-streams.git",
+        "tag": "v0.1.17",
+        "commit": "9fcbbc9b7bf542827babc92089c19e730892a22f"
       },
       "iron-layout": {
         "git": "https://github.com/EventedMind/iron-layout.git",

@@ -1,5 +1,6 @@
 Template.chat_rooms.helpers({
   chat_room: function() {
+    Meteor.subscribe('rooms');
     return Rooms.find();
   },
   createdAt_day: function() {

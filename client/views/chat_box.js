@@ -18,7 +18,6 @@ Template.chat_box.events({
     }
     else{
       alert("You haven't logged in yet!");
-      return;
     }
   },
   'keypress .inputMsg': function(e, t){
@@ -38,16 +37,42 @@ Template.chat_box.events({
         };
         Messages.insert(data);
         $('.inputMsg').val('');
+        removeTypingUser({
+          userId: _userId,
+          roomId: this.roomId,
+          userEmail: _userEmail
+        });
       }
       else{
         alert("You haven't logged in yet!");
-        return;
       }
     }
     else {
+      if ($('.inputMsg').val().length > 0){
+        var _userId = Meteor.userId();
+        var _roomId = this.roomId;
+        var _userEmail = Meteor.user().emails[0].address;
+        var obj = {
+          userId: _userId,
+          roomId: _roomId,
+          userEmail: _userEmail
+        };
+        addTypingUser(obj);
+      }
+      else {
+      }
+    }
+  },
+  'input .inputMsg': function(){
+    if (!$('.inputMsg').val()){
       var _userId = Meteor.userId();
       var _roomId = this.roomId;
       var _userEmail = Meteor.user().emails[0].address;
+      removeTypingUser({
+        userId: _userId,
+        roomId: _roomId,
+        userEmail: _userEmail
+      });
     }
   }
 });
@@ -60,6 +85,6 @@ Template.chat_box.helpers({
     }
   },
   typingUsers: function(){
-    return Session.get('typingUsers');
+    return TypingUsersCollection.find({roomId: this.roomId});
   }
 });
