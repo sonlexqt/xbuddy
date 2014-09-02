@@ -9,7 +9,7 @@
             <ul>
                 {{#each messages}}
                 <li class="msgLine">
-                    <strong style="color: {{userTextColor}}">
+                    <strong style="color: {{userTextColor userId}}">
                         {{userEmail}}
                     </strong>
                     {{userMsg}}
@@ -18,6 +18,7 @@
                     </span>
                 </li>
                 {{/each}}
+
                 {{#each typingUsers}}
                 <i>{{this.userEmail}} is typing...</i>
                 {{/each}}

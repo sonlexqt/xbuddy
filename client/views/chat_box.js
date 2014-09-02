@@ -78,11 +78,10 @@ Template.chat_box.events({
 });
 
 Template.chat_box.helpers({
-  userTextColor: function(){
-    var thisUser = Meteor.users.findOne({_id: this.userId});
-    if (thisUser){
-      return thisUser.profile.textColor;
-    }
+  userTextColor: function(_userId){
+    Meteor.subscribe('userData', _userId);
+    var x = Meteor.users.findOne({_id: _userId});
+    return x.profile.textColor;
   },
   typingUsers: function(){
     return TypingUsersCollection.find({roomId: this.roomId});
