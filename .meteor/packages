@@ -5,10 +5,10 @@
 
 standard-app-packages
 insecure
-iron-router
 jquery
 accounts-password
 bootstrap-3
 accounts-ui-bootstrap-3
 accounts-base
 streams
+iron:router

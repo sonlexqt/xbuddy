@@ -87,3 +87,8 @@ Template.chat_box.helpers({
     return TypingUsersCollection.find({roomId: this.roomId});
   }
 });
+
+Template.chat_box.rendered = function(){
+  var $chat = $(".chatBox");
+  $chat.scrollTop($chat.height());
+};
