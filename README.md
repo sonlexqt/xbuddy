@@ -1,4 +1,4 @@
 xBuddy
 ======
 
-An onilne chat web application based MeteorJS framework
+An onilne chat web application based on MeteorJS framework
