@@ -1,4 +1,6 @@
 xBuddy
 ======
 
-An onilne chat web application based on MeteorJS framework
+An online web chat app based on MeteorJS.
+
+To run this app, clone the repo then go to project root folder and run "meteor" command.
